@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div>
         <button onClick={()=>{Setstate(true)}} id='startbtn'>Show Modal</button>
-        {state && <Modal oncall={onClose} />}
+         <Modal oncall={onClose} state={state} />
     </div>
   )
 }
